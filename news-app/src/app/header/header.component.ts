@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { LINKS } from '../links';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
-
+export class HeaderComponent {
+	
+	links = LINKS;
+	
   constructor() { }
 
-  ngOnInit() {
-  }
+  getArticles(link){
+		
+		console.log(link.slug);
+	}
 
+	// so i can access the links array
 }

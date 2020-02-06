@@ -22,5 +22,7 @@
 	
 - DRY
 	- article, header, footer component
-	- 
+
+- eod review
+	- I figured out a way to access the LINKS array upon clicking on a "link" in the navbar. From here I need to set up the service that will call the api and share the info to the articles component for display. 
 	

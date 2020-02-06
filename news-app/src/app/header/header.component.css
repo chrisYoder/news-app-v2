@@ -2,16 +2,48 @@ nav {
 	margin: 0;
 	background-color: var(--ravenclaw-blue);
 	color: var(--ravenclaw-bronze);
-	font-size: 1.5em;
 	border-radius-bottom: 5px;
 	padding: 5px;
 	
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: 50px;
-	grid-template-area: 'brand links link seach';
+	grid-template-areas: 'brand . links links ';
 	align-items: center;
 }
+
 .brand {
-	
+	grid-area: brand;
+	font-size: 1.75em;
 }
+
+.links {
+	grid-area: links;
+	font-size: 1.25em;
+	
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 50px;
+	grid-template-areas: 'us int sports tech ';
+	align-items: center;
+	justify-items: center;
+}
+
+.usNews {
+	grid-area: us;
+}
+
+.intNews {
+	grid-area: int;
+}
+
+.sports {
+	grid-area: sports;
+}
+
+.tech {
+	grid-area: tech;
+}
+
+
+

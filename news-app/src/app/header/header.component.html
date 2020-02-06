@@ -2,4 +2,20 @@
 	<div class='brand'>
 		the ${{ '{' }}Coding{{ '}' }} Stoic
 	</div>
+	
+	<div class='links'>
+		
+			<span 
+				*ngFor='let link of links' 
+				class='{{link.className}}'
+				
+				(click)='getArticles(link)'
+			>
+				{{link.name}}
+			</span>
+		
+	</div>
+	
+	
+	
 </nav>
