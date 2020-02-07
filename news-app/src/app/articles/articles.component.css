@@ -1,0 +1,11 @@
+.container {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 100vh;
+	grid-template-areas: '. article article article .';
+
+}
+
+.article {
+	grid-area: article;					
+}

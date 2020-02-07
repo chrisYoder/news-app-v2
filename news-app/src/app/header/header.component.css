@@ -45,5 +45,7 @@ nav {
 	grid-area: tech;
 }
 
-
+.links span:hover {
+	border-bottom: 3px var(--ravenclaw-bronze) solid;
+}
 

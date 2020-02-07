@@ -7,8 +7,7 @@
 		
 			<span 
 				*ngFor='let link of links' 
-				class='{{link.className}}'
-				
+				class='{{link.className}}'				
 				(click)='getArticles(link)'
 			>
 				{{link.name}}

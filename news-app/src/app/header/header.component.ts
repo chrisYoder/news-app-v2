@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { LINKS } from '../links';
+import { ApiService } from '../api-service.service';
 
 @Component({
   selector: 'app-header',
@@ -10,11 +11,11 @@ export class HeaderComponent {
 	
 	links = LINKS;
 	
-  constructor() { }
+  constructor(private apiService: ApiService) { }
 
   getArticles(link){
 		
-		console.log(link.slug);
+		this.apiService.setSlug(link.slug);
 	}
 
 	// so i can access the links array
